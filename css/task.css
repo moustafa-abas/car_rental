@@ -1,0 +1,295 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+}
+:root {
+    --main-padding: 40px;
+    --button-color: teal;
+    --hover-color:rgba(6, 65, 65, 0.858);
+}
+.container {
+    width:80% ;
+    margin: 0 auto;
+}
+
+
+.home {
+    background-image: url(/images/photo_2023-08-03_21-53-10.jpg);
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+.home::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.837);
+    position: absolute;
+}
+.home .logo img {
+    width: 90%;
+}
+nav ul {
+z-index: 11;
+list-style: none;
+}
+nav ul li {
+    padding:  0 2rem;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all .5s;
+}
+
+nav ul li a:hover {   
+    color: var(--button-color);
+    font-size: 1.1rem;
+    border: 1px solid var(--button-color);
+    padding: .5rem;
+}
+/* -------------------------------------------------------------------------- */
+
+.home .text {
+    
+    top: 50%;
+    transform: translateY(50%);
+}
+.home .text p {
+    color: gray;
+}
+.home .text h2 {
+    color: var(--button-color);
+}
+.home .text button {
+    background-color: var(--button-color);
+    border: none;
+    transition: all .3s;
+    border-radius: 20px;
+}
+.home .text button:hover {
+background-color: var(--hover-color);
+}
+.landing .form {
+top: 30%;
+transform: translateY(30%);
+right: -5%;
+}
+.landing .form p{
+    text-align: end;
+}
+.form select,
+input {
+    width: 40%;
+    margin: .5% 0;
+    padding: .2rem 0;
+
+}
+select:not(:first-of-type){
+    width: 19.7%;
+}
+.form .date  {
+    width: 19.7%;
+}
+.landing input:last-of-type{
+    background-color:var(--button-color);
+    border: none;
+    border-radius: 20px;
+    transition: all .3s;
+} 
+.landing input:last-of-type:hover {
+background-color: var(--hover-color);
+}
+
+input:focus ,
+select:focus{
+    outline: none;
+    border: 3px solid var(--button-color);
+}
+@media (max-width:992px) {  .form {
+
+}
+
+
+    
+}
+/* ----------------------------------------------------------------------- */
+
+.heading > p{
+    padding: 2rem 0;
+    color: gray;
+}
+
+.services  .cell{
+    background-color: var(--button-color);
+    width: 30%;
+    margin: 1% 1%;
+    padding: 2%;
+    transition: all .3s;
+}
+.services .cell:hover {
+    background-color: var(--hover-color);
+    color: white;
+}
+.services .cell i {
+color:rgb(3, 48, 48);
+font-size: 2rem;
+display: block;
+}
+.services .cell h3 {
+padding: 1rem;
+}
+.services .cell p {
+    color: rgb(5, 43, 43);
+    font-size: 1.1rem;
+}
+
+/* --------------------------------------------------------------- */
+
+
+.pic {
+    border-top-right-radius:150px ;
+    border-bottom-right-radius:80px ;
+    width: 45%;
+    display: inline-block;
+}
+.txt {
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    top: 100px;
+    
+}
+
+
+.txt p {
+    color: gray;
+    line-height: 1.1;
+}
+.txt button {
+    text-transform: uppercase;
+    width: 250px;
+    height: 50px;
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    transition: all .3s;
+}
+.txt button:hover {
+background-color: var(--hover-color);
+border-radius: 30px;
+}
+
+/* ------------------------------------------------------------ */
+
+
+.ex .info {
+    width: 60%;
+}
+.ex .price {
+    color:var(--button-color);
+}
+.ex p {
+    color: gray;
+    line-height: 1.4;
+}
+.ex button {
+    text-transform: uppercase;
+    width: 250px;
+    height: 50px;
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    transition: all .3s;
+}
+.ex button:hover {
+    background-color: var(--hover-color);
+    border-radius: 30px;
+    }
+.ex img {
+    width: 40%;
+}
+.ex .bullets{
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+}
+.ex .bullet {
+    width: .9rem;
+    height: .9rem;
+    background-color:rgba(128, 128, 128, 0.668);
+}
+.ex .bullets .active {
+    background-color: var(--button-color);
+}
+
+/* ---------------------------------------------------------- */
+
+.block {
+    background-color: var(--button-color);
+}
+.block button {
+    border: none;
+    background-color:  var(--hover-color);
+    transition: all .3s;
+}
+.block button:hover {
+    border-radius: 30px;
+}
+
+/* ------------------------------------------------------- */
+
+.car img {
+        width: 100%; 
+}
+.car span {
+        background-color: var(--button-color);
+    color: black;
+    position: relative;
+    top: -2%;
+    margin-left: 2%;
+    }
+.car h3 {
+margin: 5% 0;
+    }
+.car p {
+        color: gray;
+    } 
+.car::after {
+    content: "15likes ";
+    position: absolute;
+    left: 10%;
+}
+.car::before{
+    content: "15comments ";
+    position: absolute;
+    left: 40%;
+    bottom: -5%;
+}
+
+/* ------------------------------------------------------------- */
+
+    footer {
+        background-color: var(--button-color)
+    }
+
+    footer h5 {
+        color: white;
+        font-size: 1.5rem;
+    }
+    footer img {
+        width: 10%;
+    }
+    footer .color {
+        height: 2rem;
+        
+    }
+
+
